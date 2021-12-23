@@ -7,7 +7,15 @@ has_children: true
 ---
 
 # PMOS Hot Carrer Injection
-关于HCI的学习，尤其是PMOS
+{: .no_toc}
 
-> 此处不涉及保密信息，仅涉及公开论文资料与个人模拟数据。
+关于HCI的学习，尤其是PMOS。此处不涉及保密信息，仅涉及公开论文资料与个人模拟数据。
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
