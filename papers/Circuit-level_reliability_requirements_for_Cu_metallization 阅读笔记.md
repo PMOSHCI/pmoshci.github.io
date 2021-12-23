@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: paper
 title: Circuit-level reliability requirements for Cu metallization
 nav_order: 2
 permalink: /paper/index.html
+mathjax: true
 ---
 
 

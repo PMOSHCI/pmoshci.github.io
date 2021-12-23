@@ -1,15 +1,2 @@
 title: "PMOS HCI"
 remote_theme: pmarsceill/just-the-docs
-
-logo: "/assets/images/logo.png"
-
-collections:
-  papers:
-    permalink: "/:collection/:path/"
-    output: true
-
-just_the_docs:
-  collection:
-    papers:
-      name: Papers
-      
