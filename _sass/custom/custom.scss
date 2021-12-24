@@ -1,0 +1,24 @@
+img.wrapped-float {
+    float: right;
+    margin: 0 15px;
+    max-width: 25%;
+    height: auto;
+    // -webkit-shape-outside:circle();
+    // shape-outside:circle();
+}
+  
+img.rounded {
+    border-radius: 50%;
+}
+
+div.research ul {
+	list-style: none;
+}
+
+div.research li {
+	margin-bottom: 15px;
+}
+
+div.research li:before {
+	content: ">";
+}
