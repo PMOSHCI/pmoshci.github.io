@@ -3,7 +3,17 @@ layout: post
 title: Adopting a dog using Python
 draft: false
 last_modified_date: 2020-12-23
+usemathjax: true
 ---
+
+$\LaTeX$
+
+$$
+\begin{aligned}
+    a&=b\\
+    c&=d
+\end{aligned}
+$$
 
 For a long time my wife and I wanted to adopt a dog, and during this summer we did so.
 However, it was surprisingly hard to accomplish in the US, maybe partly because of the surge in demand due to COVID.
