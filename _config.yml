@@ -18,18 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Alvaro Carril
-email: acarril at princeton dot edu
+title: PMOS HCI
+email: 
 description: >- # this means to ignore newlines until "baseurl:"
   I'm a PhD student at Princeton. I work with computers.
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://acarril.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: acarrilr
-github_username:  acarril
+url: "https://pmoshci.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: ToddZZF
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-ga_tracking: UA-54241026-2
+# ga_tracking:
 
 # Color scheme (customs are defined in _sass/color_schemes/)
 color_scheme: myblu
@@ -43,7 +42,7 @@ plugins:
 # Aux links for the upper right navigation
 aux_links:
   "Goto Github repo >":
-    - "//github.com/acarril"
+    - "//github.com/pmoshci"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
