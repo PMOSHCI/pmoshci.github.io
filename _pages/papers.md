@@ -1,17 +1,17 @@
 ---
 layout: page
-title: Research
-permalink: /research
+title: Papers
+permalink: /papers
 nav_order: 2
 ---
 
-# Research
+# Papers
 
 ### Publications
 
 <div class="research">
   <ul class="ul-research">
-    {% for item in site.research %}{% if item.pubstatus == 'published' %}
+    {% for item in site.papers %}{% if item.pubstatus == 'published' %}
       <li>
       <b><a href="{{ item.url }}">{{ item.title }}</a></b>
       {% if item.coauthors %}, with {{ item.coauthors }}{% endif %}<br/>

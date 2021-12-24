@@ -1,13 +1,13 @@
 ---
 layout: page
-title: Resources
-permalink: /resources
+title: Books
+permalink: /books
 nav_order: 4
 ---
 
-# Resources
+# Books
 
-This page is a repository of resources of various types, collected in one place. These include [software](#software) bits I've written (mostly Stata) and miscellaneous [documents](#documents) (mostly in spanish).
+
 {: .fs-6 .fw-300 }
 
 

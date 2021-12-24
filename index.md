@@ -1,6 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 layout: home
 title: Home
 nav_order: 1
@@ -8,20 +6,17 @@ nav_order: 1
 
 # Welcome!
 
-I'm Alvaro Carril, a PhD student at the Economics Department of Princeton University.
+关于热载流子注入的相关知识，尤其是 PMOS. 所以资料均来自于公开论文，不涉密。
 {: .fs-6 .fw-300 }
 
-<img src="/assets/images/acarril-princeton.jpg" class="wrapped-float rounded">
+<!-- <img src="/assets/images/acarril-princeton.jpg" class="wrapped-float rounded"> -->
 
-My main (research) interests revolve around reducing inequalities and improving the efficiency of markets that are heavily influenced ---or controlled--- by the public sector.
-I'm particularly interested in studying the relationship between education and labor markets.
+![planar finfet gaa comparison](/assets/images/planar_finfet_gaa.png)
 
-Check out the papers I am currently working on in the [research](/research) section.
-The [resources](/resources) section serves as a repository of miscellaneous material that I've worked on over the years, and most of the projects that I'm (not) working on (big and small) are hosted in [my Github repo](https://www.github.com/acarril).
-I also have a number of brief blog-type [posts](/posts) I've made about various econ and/or computer topics.
+> 与 偏置温度不稳定性（NBTI）和 时间相关的介质击穿（TDDB） 一样，热载流子退化是近半个世纪以来最前沿的稳定性问题。在早期技术中，器件工作在相对较高的电压下，这种条件可以直接产生高能（“热”）载流子。通过设定一些幸运电子的假设条件，即单一“幸运”热载流子可以造成器件退化，我们可以构建出一个简单而准确的可靠性模型。但是如今在缩放工艺下，热载流子退化产生的原因更加难以理解，需要在不同层次上了解缺陷产生的细节。
 
-## About this site
+——《Hot Carrier Degradation in Semiconductor Devices》
 
-I like it when researchers take the time to share their knowledge of the computational tools that they use, so this website is (among other things) an attempt to do so myself.
-Over the years I've accumulated some expertise on what I call "the tools of the trade", and I find it both constructive and fun to write posts covering specific topics.
-I hope you find something useful.
+## 关于本站
+
+本站只是个人学习过程中的一些资料整理，一方面是方便自己看，另一方面是放出来供其他人研究、讨论，推动该领域的发展。

@@ -42,7 +42,7 @@ plugins:
 # Aux links for the upper right navigation
 aux_links:
   "Goto Github repo >":
-    - "//github.com/pmoshci"
+    - "//github.com/PMOSHCI/pmoshci.github.io"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -64,18 +64,18 @@ compress_html:
 
 # Collections
 collections:
-  research:
+  papers:
     output: true
-    permalink: /research/:title
+    permalink: /papers/:title
 
 # Defaults
 permalink: /posts/:title # posts default
 defaults:
   - scope:
       path: ""
-      type: "research"
+      type: "papers"
     values:
-      layout: research
+      layout: paper
 
 exclude:
   - backup
