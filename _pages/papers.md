@@ -27,7 +27,7 @@ mathjax: true
 
 <div class="research">
   <ul class="ul-research">
-    {% for item in site.research %}{% if item.status != 'read' %}
+    {% for item in site.papers %}{% if item.status != 'read' %}
       <li>
       <b><a href="{{ item.url }}">{{ item.title }}</a></b>
       {% if item.authors %}, by {{ item.authors }}{% endif %}
