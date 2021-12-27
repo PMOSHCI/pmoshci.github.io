@@ -6,7 +6,7 @@ nav_order: 1
 
 # Welcome!
 
-关于热载流子注入的相关知识，尤其是 PMOS. 所以资料均来自于公开论文，不涉密。
+关于热载流子注入的相关知识，尤其是 PMOS. 所有资料均来自于公开论文，不涉密。
 {: .fs-6 .fw-300 }
 
 <!-- <img src="/assets/images/acarril-princeton.jpg" class="wrapped-float rounded"> -->
