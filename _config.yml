@@ -76,6 +76,7 @@ defaults:
       type: "papers"
     values:
       layout: paper
+      mathjax: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
