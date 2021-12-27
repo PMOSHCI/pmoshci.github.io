@@ -3,18 +3,19 @@ layout: page
 title: Papers
 permalink: /papers
 nav_order: 2
+mathjax: true
 ---
 
 # Papers
 
-### Publications
+### Read
 
 <div class="research">
   <ul class="ul-research">
-    {% for item in site.papers %}{% if item.pubstatus == 'published' %}
+    {% for item in site.papers %}{% if item.status == 'read' %}
       <li>
       <b><a href="{{ item.url }}">{{ item.title }}</a></b>
-      {% if item.coauthors %}, with {{ item.coauthors }}{% endif %}<br/>
+      {% if item.authors %}, by {{ item.authors }}{% endif %}<br/>
       <b>{{ item.journal }}</b>
       <br/>{{ item.abstract }}
       </li>
@@ -22,14 +23,14 @@ nav_order: 2
   </ul>
 </div>
 
-### Work in progress
+### Reading
 
 <div class="research">
   <ul class="ul-research">
-    {% for item in site.research %}{% if item.pubstatus != 'published' %}
+    {% for item in site.research %}{% if item.status != 'read' %}
       <li>
       <b><a href="{{ item.url }}">{{ item.title }}</a></b>
-      {% if item.coauthors %}, with {{ item.coauthors }}{% endif %}
+      {% if item.authors %}, by {{ item.authors }}{% endif %}
       <br/>{{ item.abstract }}
       </li>
     {% endif %}{% endfor %}
