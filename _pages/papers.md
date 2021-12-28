@@ -31,7 +31,7 @@ mathjax: true
       <li>
       <b><a href="{{ item.url }}">{{ item.title }}</a></b>
       {% if item.authors %}, by {{ item.authors }}{% endif %}
-      <br/>{{ item.abstract }}
+      <br/>{{ item.abstract }}<br/>{% if item.link %}Available at <a href="{{ item.link }}">here</a>{% endif %}
       </li>
     {% endif %}{% endfor %}
   </ul>
