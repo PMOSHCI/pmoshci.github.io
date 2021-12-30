@@ -13,7 +13,7 @@ mathjax: true
 $$
 \text{HCD}
 \leftrightarrow
-\text{Si-H}
+\text{Si-H 缺陷}
 \begin{cases}
 \text{SP}
 \begin{cases}

@@ -10,6 +10,7 @@ layout: default
 <div class="post-content">
     {% if page.authors %}<b>Authors:</b> {{ page.authors }}</br>{% endif %}
     <b>Abstract:</b> {{ page.abstract | markdownify | remove: '<p>' | remove: '</p>' }}
+    {% if page.link %}<br><b>Link:</b><a href="{{ page.link }}">{{ page.link }}</a>{% endif %}
     <hr>
     {{ content }}
 </div>

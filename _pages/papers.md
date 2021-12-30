@@ -36,3 +36,12 @@ mathjax: true
     {% endif %}{% endfor %}
   </ul>
 </div>
+
+## Planning
+
+https://sci-hub.ru/10.1109/IRPS.2013.6531943
+
+https://sci-hub.ru/10.1134/S1063782618100081
+
+https://www.iue.tuwien.ac.at/pdf/ib_2018/JB2018_Tyaginov_1.pdf
+

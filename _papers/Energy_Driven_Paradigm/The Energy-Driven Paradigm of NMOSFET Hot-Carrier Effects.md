@@ -34,7 +34,7 @@ $$
 
 但是，很多人已经展示了 EEDF 在漏端的电势陡降的最大能量附近有一个重要的膝点。这大约是从漏到夹断点的电势（此处称为$V_\tx{EFF}$）。这对 EEDF 有两个影响：1. $E<qV_\tx{EFF}$ 时的 EEDF 变得更平缓；2. $E=qV_\tx{EFF}$ 附近的膝点增强，并进入对HCI有重要影响的能量范围内。
 
-如果这一膝点决定了主导能量，那么 II 和 ISG 率是“能量驱动的”：1. 主导能量跟随偏置条件；2. 热载流子偏置依赖性主要是源于 $S$ 函数的能量依赖性，通过 $V_\tx{EFF}$ 的偏置依赖性表现出来。EEDF 对场的依赖性是次要的。图 2 概念性的描述了这一特点。在图中，$S_\tx{II}$ 使用了 Kamakura 的模型（$\propto (E-E_G)^{4.6}$
+如果这一膝点决定了主导能量，那么 II 和 ISG 率是“能量驱动的”：1. 主导能量跟随偏置条件；2. 热载流子偏置依赖性主要是源于 $S$ 函数的能量依赖性，通过 $V_\tx{EFF}$ 的偏置依赖性表现出来。EEDF 对场的依赖性是次要的。图 2 概念性的描述了这一特点。在图中，$S_\tx{II}$ 使用了 Kamakura 的模型（$\propto (E-E_G)^{4.6}$）
 
 ![](images/Fig.%202.%20Graphical%20representation%20of%20the%20energy-driven%20hot-carrier%20paradigm.jpg)
 
@@ -76,3 +76,84 @@ $l$ 始终小于 $L_S$（高横向电场的总长度）。对于 1-2 V 的 Halo 
 1. 1.2V 90nm节点
 2. 1.8V 180nm节点
 
+衡量ISG的IV特性看似是 $\Delta 1/g_\tx{mlin,max}$，但 $\Delta (1/I_\tx{ON})$ 在整个应力区间和沟道长度区间中都具有更好的稳健性。为了消除该参数对沟道长度 $L$ 和阈值电压的依赖性，我们用下面 $\tau_\tx{IT}$ （ISG lifetime）的定义：
+
+$$
+\tau_\tx{IT} \equiv \tx{lifetime to 5%} \Delta \tx{of} \left\{ \Delta I_\tx{ON} \left( \frac{L}{L_\tx{nom}} (V_\tx{TECH}-V_T) \right) \right\}
+$$
+
+对这两个器件：$b=1.2$；$V_\tx{TECH}$为各自的技术电压（1.2或1.8）$V_T$ 为在应力前的饱和 $V_T$。
+
+## 模型
+
+A. 计算 $V_\tx{EFF}$
+
+$V_\tx{EFF}$ 是从沟道到漏的有效压降
+
+$$
+V_\tx{EFF}=V_0+V_{DS}-V_\tx{DSAT}
+$$
+
+式中，$V_0$ 为 halo 和/或 source function 产生的额外压降（总共约为几百毫伏）。
+
+$$
+V_\tx{DSAT}=\tx{pinch-off voltage}
+$$
+
+使用 Taur 和 Ning 的近似方程：
+
+$$
+V_\tx{DSAT} = \frac{\frac{2(V_{GS}-V_T)}{m}}{1+\sqrt{1+\frac{2(V_{GS}-V_T)}{mF_C(L-L_S)}}}
+$$
+
+式中，$F_C$ 是速度饱和的临界场，$L = L_\tx{POLY}$ 或 $L_\tx{EFF}$，$L_S$ 是速度饱和区的长度，$m$ 是体效应系数，$V_T$ 依然为在应力前的饱和 $V_T$。
+
+B. $S_\tx{II}(E)$ 函数
+
+文献中有多种 II 模型，此处采用简单的电子 II 散射率模式：
+
+$$
+S_\tx{II}(E)=A(E-E_G)^{4.6}
+$$
+
+C. 热载流子率
+
+在能量驱动的近似中，热载流子率与可用能量处的 $S$ 函数成比例。线性区的 II 和 ISG 可用能量为 $qV_\tx{EFF}$，而在二次区（饱和区？）的 ISG 为 $qm_\tx{EE}V_\tx{EFF}$
+
+$$
+r_\tx{II}(V_\tx{EFF}) \approx BS_\tx{II}(qV_\tx{EFF})
+$$
+
+（忽略任何e-e散射效应）
+
+$$
+\frac{1}{\tau(V_\tx{EFF})}\approx C I_S S_\tx{IT} (qV_\tx{EFF})\\
+$$
+
+以上为线性区。
+
+$$
+\frac{1}{\tau_\tx{IT}} \approx DI_S^2 S_{IT}(qm_\tx{EE}V_\tx{EFF})
+$$
+
+以上为 bulk e-e-scattering （quadratic）区，同时 $r_{II}$ = II ratio（$I_B/I_S$），$\tau_\tx{IT}$ = ISH 热载流子寿命，$I_S$ = 单位宽度的源极电流，$m_\tx{EE}$ = ee-scattering 能量乘数参数，$B,C,D$ 是工艺相关的常数。
+
+关于线性和二次区在 [3] [4] 中有描述。
+
+## 结果
+
+A. $V_\tx{EFF}$ 参数
+
+使用表一中的参数值
+
+| Device Type | $F_C$,mV/nm | m   | $V_0$,V | $L_S$,nm |
+| ----------- | ----------- | --- | ------- | -------- |
+| 1           | 3.0         | 1.2 | 0.29    | 45       |
+| 2           | 3.0         | 1.2 | 0.22    | 60       |
+
+虽然 $V_0$ 和 $L_S$ 是 $V_{DS}$ 和 $L$ 的函数，但此处将其当作常数。另外，器件1由于有 poly overlay，所以 $L_S$ 可能包含额外的长度。
+
+
+[3] 
+
+[4]
