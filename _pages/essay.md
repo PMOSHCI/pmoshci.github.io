@@ -3,6 +3,7 @@ layout: page
 title: Essay
 permalink: /essay
 nav_order: 5
+has_children: true
 mathjax: true
 ---
 

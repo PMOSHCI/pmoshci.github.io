@@ -8,11 +8,11 @@ link: https://sci-hub.ru/10.1109/ESSDERC.2011.6044212
 
 # Impact of the Carrier Distribution Function on Hot-Carrier Degradation Modeling
 
-![](../../images/Fig.%201.%20The%20simulation%20flowchart.jpg)
+![](../images/Fig.%201.%20The%20simulation%20flowchart.jpg)
 
 Fig. 1. The simulation flowchart. The modeling concept includes the transport module, the module for trap generation, and the module responsible for simulations of characteristics of a degraded device.
 
-![](../../images/Fig.%208.%20The%20linear%20drain%20current%20degradation%20experiment%20vs.%20simulations.jpg)
+![](../images/Fig.%208.%20The%20linear%20drain%20current%20degradation%20experiment%20vs.%20simulations.jpg)
 
 Fig. 8. The linear drain current degradation: experiment vs. simulations. The case of 𝐿ch = 0.5𝜇m.
 
