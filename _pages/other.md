@@ -4,17 +4,30 @@ title: Other
 permalink: /other
 nav_order: 7
 search_exclude: true
+mathjax: true
 ---
 
 # BJT PNP晶体管
 
-BJT中的热载流子退化指的是在发射结（B-E junction）反偏时会在 B-E 边缘的 Si/SiO2 界面上产生界面态和氧化层电荷，导致 IB 上升，从而电流增益β下降[^1][^2]。C. Hu 于[^3]中提出如下模型：
+BJT中的热载流子退化指的是在发射结（B-E junction）反偏时会在 B-E 边缘的 Si/SiO2 界面上产生界面态和氧化层电荷，导致 IB 上升，从而电流增益β下降[^1] [^2]。C. Hu 于[^3]中提出如下模型：
 
 $$
-\Delta I_B \propto f(tI_R e^{-\phi_T/kT_E})
+直流：\Delta I_B = D J_C^a I_R^b t^c
 $$
 
-式中，$\phi_T$ 是器件损伤的临界能量（3.7V），$t$ 是应力时间，
+$$
+交流：\Delta I_B = D J_C^a \left[ \int I_R^b \dif t  \right]^c
+$$
+
+$a,b,c,D$ 是拟合参数，$J_C$ 是集电极电流密度，$I_R$ 是反向电流密度。
+
+在 BERT 中，定义 BJT 的 AGE 为：
+
+$$
+Age(T) = I_S^{a/n} \int_{t=0}^T (D')^{1/n} I_R^{b/n}(t) \dif t
+$$
+
+从而 $\Delta I_B \propto f(AGE)$
 
 [^1]: [Physically Based Comparison of Hot-Carrier-Induced and Ionizing-Radiation-Induced Degradation in B JT’ s ](https://ieeexplore.ieee.org/abstract/document/368041/)
 
