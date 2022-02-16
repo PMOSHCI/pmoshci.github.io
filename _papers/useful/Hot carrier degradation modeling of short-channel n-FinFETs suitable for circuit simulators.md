@@ -11,7 +11,7 @@ link: https://sci-hub.ru/10.1016/j.microrel.2015.11.002
 
 ## 介绍
 
-鳍形场效应晶体管（FinFET）被认为是最有希望推动工艺持续缩小的器件。由于它对沟道电场的良好控制，它可以抑制短沟道效应（SCE）。新的纳米级FinFET CMOS工艺带来了新的可靠性挑战，同时也给确定集成电路可靠性的方法带来了巨大的变化。热载流子效应使得载流子陷阱进入到栅介质层，并产生界面态。这些效应使得晶体管的参数（如阈值电压$V_t$，亚阈值参数 $\eta$，载流子有效迁移率 $\mu_\tx{eff}$）发生退化，这会对模拟和数字电路的性能带来负面影响。除了对漏电流的研究外，对FinFET可靠性的研究只局限于少数工作。因此，对热载流子建模是一件非常紧急而重要的议题，尤其在纳米级器件中。
+鳍形场效应晶体管（FinFET）被认为是最有希望推动工艺持续缩小的器件。由于它对沟道电场的良好控制，它可以抑制短沟道效应（SCE）。新的纳米级FinFET CMOS工艺带来了新的可靠性挑战，同时也给确定集成电路可靠性的方法带来了巨大的变化。热载流子效应使得载流子陷阱进入到栅介质层，并产生界面态。这些效应使得晶体管的参数（如阈值电压$V_t$，亚阈值参数 $\eta$，载流子有效迁移率 $\mu_{\rm eff}$）发生退化，这会对模拟和数字电路的性能带来负面影响。除了对漏电流的研究外，对FinFET可靠性的研究只局限于少数工作。因此，对热载流子建模是一件非常紧急而重要的议题，尤其在纳米级器件中。
 
 目前已经提出了基于物理的HC紧凑模型，用于预测纳米级的n-FinFET的性能退化。模型基于对漏区附近非均匀的界面态分布的经验性表达式，其包含4个模型参数[^5]。这些参数是通过对界面态分布进行拟合得到的，而界面态分布则是从 forworded gated-diode method 提取的。除了提取不同应力时间的界面态分布函数，HC紧凑模型还需要通过数值迭代来复现退化后的器件的IV特性。因此，该模型不适合用于电路模拟。
 
@@ -21,7 +21,7 @@ In this paper, the HC degradation of n-FinFETs with different fin widths and cha
 
 ## 实验
 
-5-fin n-channel SOI FinFET with fin length=30nm, fin height=65nm, fin width=5,10,15nm, buried oxide thickness=145nm, channel doping concentration $10^{15} \tx{cm}^{-3}$.
+5-fin n-channel SOI FinFET with fin length=30nm, fin height=65nm, fin width=5,10,15nm, buried oxide thickness=145nm, channel doping concentration $10^{15} {\rm cm}^{-3}$.
 
 ## 热载流子退化机理
 
