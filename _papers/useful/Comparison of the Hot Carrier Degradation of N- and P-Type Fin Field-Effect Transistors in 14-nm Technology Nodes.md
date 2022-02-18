@@ -1,7 +1,7 @@
 ---
 title: 14nm工艺结点N型与P型鳍型场效应晶体管的热载流子效应对比
 id: COTHCDONAPTFFETI1NTN
-abstract: 提出了一种包括CHC和NBTI的紧凑可靠性模型。该模型描述了界面态的产生和空穴
+abstract: 在这项研究中，我们制造了一个 n 型鳍式场效应晶体管 (FinFET) 和一个 p 型 FinFET (p-FinFET)，以比较它们在 14 纳米技术节点中的热载流子退化 (HCD)。
 link: https://ieeexplore.ieee.org/document/9519693
 ---
 

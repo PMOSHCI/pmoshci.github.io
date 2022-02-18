@@ -145,7 +145,7 @@ $$
 \Delta V_\tx{th_CHC} = C \left\{ \exp\left[ \frac{\varphi_\tx{it}}{(q\lambda E_\tx{max})} \right]\cdot \left(\frac{I_{ds}}{W}\right) \cdot t \right\}^m
 $$
 
-其中，$C$ 是拟合参数，$\varphi_\tx{it}$ 是产生陷阱所需的能量，$\lambda$ 是热空穴的平均自由程，$\lambda$ 是最大横向电场。
+其中，$C$ 是拟合参数，$\varphi_\tx{it}$ 是产生陷阱所需的能量，$\lambda$ 是热空穴的平均自由程，$E_{\rm max}$ 是最大横向电场。
 
 从而总的退化为：
 
