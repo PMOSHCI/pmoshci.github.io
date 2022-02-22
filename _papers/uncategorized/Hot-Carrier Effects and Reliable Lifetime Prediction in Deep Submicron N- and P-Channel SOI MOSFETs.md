@@ -3,7 +3,7 @@ title: 深亚微米 N 型和 P 型SOI MOSFET 的热载流子效应和可靠性�
 authors: Shing-Hwa Renn, Jean-Luc Pelloie, and Francis Balestra
 id: HCEARLPIDSNAPCSM
 link: https://sci-hub.ru/https://ieeexplore.ieee.org/document/726651/
-abstract: 热载流子效应在深亚微米 N 和 P 沟道 SOI MOSFET 中进行了深入研究，栅极长度范围从 0.4 μm 到 0.1 μm。**讨论了热载流子退化的饱和现象，并将退化分为两段来拟合。**
+abstract: 热载流子效应在深亚微米 N 和 P 沟道 SOI MOSFET 中进行了深入研究，栅极长度范围从 0.4 μm 到 0.1 μm。<strong>讨论了热载流子退化的饱和现象，并将退化分为两段来拟合。</strong>
 ---
 
 ## 实验细节
