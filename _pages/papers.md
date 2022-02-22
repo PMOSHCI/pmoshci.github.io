@@ -26,10 +26,6 @@ mathjax: true
 
 ## Planning
 
-2022-02-21
-
-https://sci-hub.ru/https://ieeexplore.ieee.org/document/9260834
-
 ---
 
 https://sci-hub.ru/10.1109/IRPS.2013.6531943
