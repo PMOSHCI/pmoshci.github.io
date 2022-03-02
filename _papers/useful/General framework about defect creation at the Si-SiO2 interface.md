@@ -178,7 +178,7 @@ $$
 N=\frac{E_B}{\hbar \omega}
 $$
 
-这里 Pn 是第 n 层被占据的概率，而 Pu 和 Pd 是向上和向下的概率（从第 n 级到第 n+1 级的激发向上或从第 n 级到第 n-1 级的衰减向下）。每一层的占据密度 $n_n$ 的变化定义为第一层的方程（18）和第二层到第 N 层的方程（19），
+这里 $P_n$ 是第 n 层被占据的概率，而 $P_u$ 和 $P_d$ 是向上和向下的概率（从第 n 级到第 n+1 级的激发向上或从第 n 级到第 n-1 级的衰减向下）。每一层的占据密度 $n_n$ 的变化定义为第一层的方程（18）和第二层到第 N 层的方程（19），
 
 $$
 \frac{\dif n_0}{\dif t}=P_d n_1 - P_u n_0 \tag{18}
@@ -209,7 +209,7 @@ $$
 从方程（22），Si-H 键断裂率 $R_{\rm bMVE}$ 可以直接与器件寿命 $\tau$ 相关，定义为达到给定退化标准的时间
 
 $$
-\Delta N_{\rm it,crit} = (R_{b{\rm MVE}})^{0.5} \tag{23}
+\Delta N_{\rm it,crit} = (R_{b{\rm MVE}}\tau)^{0.5} \tag{23}
 $$
 
 其中
@@ -218,7 +218,7 @@ $$
 R_{b{\rm MVE}}\propto n_0 \lambda \left(\frac{P_u}{P_d}\right)^N \tag{24}
 $$
 
-每个 Pu 和 Pd 概率中有两项：一项纯粹取决于晶格引起的振动模式的激发/衰减（由衰减率 $w_e$ 描述），另一个与入射电子对振动模式的激发和发射有关，这可以激发（在 $P_u$ 中）或去激发（在 $P_d$ 中）声子模式（假设具有相同的速率），它等于 $S_{\rm MVE}(I_{ds}/q)$，给出
+每个 $P_u$ 和 $P_d$ 概率中有两项：一项纯粹取决于晶格引起的振动模式的激发/衰减（由衰减率 $w_e$ 描述），另一个与入射电子对振动模式的激发和发射有关，这可以激发（在 $P_u$ 中）或去激发（在 $P_d$ 中）声子模式（假设具有相同的速率），它等于 $S_{\rm MVE}(I_{ds}/q)$，给出
 
 $$
 P_u = w_e \exp(-\hbar \omega/k_B T)+S_{\rm MVE}(I_{ds}/q) \tag{25}
@@ -231,7 +231,7 @@ $$
 在 STM 研究的情况下，$S_{\rm MVE}$ 函数被命名为“非弹性隧穿概率”，即具有振动模式的入射载流子的散射率。 由于振动模式类似于局域声子模式，因此可以使用线性电子 - 声子耦合来描述 $S_{\rm MVE}$。自从蒙特卡洛模拟广泛使用以来，这种电子-声子相互作用在文献中是可用的。 最后，断裂率 $R_{b{\rm MVE}}$ 可以定义为
 
 $$
-R_{b{\rm MVE}}=n_0\nu \left[\frac{S_{\rm MVE}\left(\frac{I_{ds}}{q}\right)+w_e \exp\left(\frac{-\hbar \omega}{k_B T}\right)}{S_{\rm MVE}\left(\frac{I_{ds}}{q}\right)+w_e}\right]^{E_B/\hbar \omega} \exp\left(\frac{-E_{\rm emi}}{k_B T}\right)
+R_{b{\rm MVE}}=n_0\nu \left[\frac{S_{\rm MVE}\left(\frac{I_{ds}}{q}\right)+w_e \exp\left(\frac{-\hbar \omega}{k_B T}\right)}{S_{\rm MVE}\left(\frac{I_{ds}}{q}\right)+w_e}\right]^{E_B/\hbar \omega} \exp\left(\frac{-E_{\rm emi}}{k_B T}\right) \tag{27}
 $$
 
 值得注意的是，在低能量（<4 eV）下，已计算出对 $R_{b{\rm MVE}}$ 的主要贡献是由于一个电子仅向键提供一个高能量子 $\hbar \omega$ 的事件，而在更高的能量下，可以提供多个 $\hbar \omega$。
@@ -247,7 +247,7 @@ $$
 通过研究我们的 65 nm 节点器件中的 HC 退化，覆盖每个 $V_{ds}$ 应力的宽 $V_{gs}$ 应力范围，我们已经证明了与之前团队相似的三个方案。然而，我们发现他们基于 EES 的模型的第三部分无法解释我们的实验数据集。此时，我们提出了 MVE 现象作为 EES 之外的另一种解释，即在高 Vgs 下器件寿命缩短。在本文中，我们报告了在 45 nm 节点设备上收集的数据，该设备使用比以前的研究更广泛的 $V_{gs}$ 和 $V_{ds}$ 应力电压范围。它允许达到更高的 $I_{ds}$ 值（图7）。图 7 表明 $V_{ds}$ 影响（即载流子能量）在低 $I_{ds}$ 时很重要，而在高 $I_{ds}$ 时会大大降低。这种行为变化也可以用能量变化来解释。 缺陷产生率 $R_b$ 在给定能量 $E_{\rm dom}$ 下占主导地位，这可以通过考虑从漏极到沟道夹断点的有效电位 $V_{\rm EFF}$ 来确定，
 
 $$
-V_{\rm EFF}=V_0+V_{ds}-V_{dat} 
+V_{\rm EFF}=V_0+V_{ds}-V_{dat} \tag{28}
 $$
 
 $$
@@ -259,19 +259,21 @@ $$
 *a. 沟道热电子（CHC）模式（SVE和EES）和STM数据。* 关于单载流子 SVE 和 EES 可以激发共振的高能范围，根据方程 15 和 16，$R_b /I_{ds}$ 和 $R_b /I_{ds}^2$ 的比率与乘积 $P_{\rm exc}P_{\rm cou}$ 相关
 
 $$
-\frac{R_{b{\rm SVE}}}{I_{ds}}\propto P_{\rm exc}P_{\rm cou}
+\frac{R_{b{\rm SVE}}}{I_{ds}}\propto P_{\rm exc}P_{\rm cou} \tag{29}
 $$
 
 和
 
 $$
-\frac{R_{b{\rm EES}}}{I_{ds}^2}\propto P_{\rm exc}P_{\rm cou}
+\frac{R_{b{\rm EES}}}{I_{ds}^2}\propto P_{\rm exc}P_{\rm cou} \tag{30}
 $$
 
 这个乘积是通过绘制 $1/ \tau I_{ds}$ 和 $1/ \tau I_{ds}^2$ 与它们各自的 $E_{\rm dom}$ 进行实验重建的，考虑到对于 SVE $E_{\rm dom}$ 接近其拐点能量（即 $E_{\rm dom}=qV_{\rm EFF}$），而对于 EES 则约为 $2qV_{\rm EFF}$。我们在图 8 中显示的实验数据集已通过类似于用于描述碰撞电离的单一经验定律进行了调整，
 
+![](../images/FIG.%208.%20SVE%20and%20EES%20modes.jpg)
+
 $$
-P_{\rm exc}P_{\rm cou} \propto B(E-E_B)^{p_{it}}
+P_{\rm exc}P_{\rm cou} \propto B(E-E_B)^{p_{it}} \tag{31}
 $$
 
 这里，$P_{it}$ 约为 11，$E_B=1.5$ eV。值得注意的是，$E_B$ 与用 NBTI 数据得到的结果相同，如果用与 NBTI 结果得到的相同的 $\sigma$ 离散度对其值进行修改，仍然可以拟合数据。该解吸产率方程与每个载流子产生的 $N_{it}$ 数成正比，也允许描述 STM 数据。STM 产率在 6 V 左右的样本偏置处显示了一个阈值（图 9）。由于高漏极电压和最低电压部分的电压依赖性，这已被解释为高压下的 DEE 和低压下的 MVE 之间的阈值。图 9 显示，我们的 $P_{\rm exc}P_{\rm cou}$ 函数 [Eq (31)] 使用与 HC 退化晶体管相同的幂律和 $N_{it}$ 阈值能量（分别为 11 和 1.5 eV）完美地模拟了低压范围内的产率依赖性。第一个结论是这个电压和电流依赖部分可以用 SVE 和/或 EES 来解释。因此，在该图中未达到 MVE，因为即使在 4 V 时能量也太高，并且阈值发生在 DEE 和 SVE 之间。第二点涉及 DEE 部分。 根据方程（6），产率 $R_{\rm DEE}/I$ 与 $P_{\rm exc}$ 成正比，这意味着 $P_{\rm exc}$ 与载流子能量无关（图 9）。
@@ -281,7 +283,7 @@ $$
 最后，$P_{\rm exc}P_{\rm cou}$ 的能量依赖性仅归因于 $P_{\rm cou}$。和 $S_{\rm MVE}$ 做一个平行线，这个耦合后最后一层N的占有概率（$P_{\rm cou}$）也可以定义为 $S_{it}$，入射载流子的散射率直接与最后一层能产生 $N_{it}$，
 
 $$
-S_{it}\propto B(E_-E_B)^{p_{it}}
+S_{it}\propto B(E-E_B)^{p_{it}}
 $$
 
 当单个载体与键相互作用时，此 $S_{it}$ 函数有效； 它合并了 SVE 和 EES 模式数据，通常称为 CHC 模式。
