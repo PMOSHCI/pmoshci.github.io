@@ -6,6 +6,8 @@ abstract: 对0.25 μm pmos进行了实验研究，分析了三种退化机制，
 link: https://sci-hub.ru/https://ieeexplore.ieee.org/abstract/document/370028/
 ---
 
+# Three Hot-Carrier Degradation Mechanisms in Deep-Submicron PMOSFETs
+
 ## PMOS 退化的时间依赖性
 
 在 $V_G=V_T$ 时，电子注入到间断点和漏端之间（可通过栅电流测量）生成负的氧化层电荷和界面态。负电荷在沟道中吸引正电荷，等效于延长了漏极的范围，将有效沟道长度缩短了 $\Delta L_{\rm eff}$。而由于负电荷的屏蔽效应，界面态对器件特性无影响。该退化机制的时间依赖模型为：
@@ -17,7 +19,7 @@ $$
 第二，高能空穴可能产生界面态，减小沟道内载流子的迁移率。其时间依赖性可以参考NMOS
 
 $$
-\Delta L_{\rm cp}\propto \Delta L_{\rm eff}/t_{\rm ox}=3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
+\Delta I_{\rm cp}\propto \Delta L_{\rm eff}/t_{\rm ox}=3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
 $$
 
 另外，在深亚微米表面沟道PMOS中，我们观察到当 $V_G$ 接近 $V_D$ 时，产生正氧化层电荷。根据本文的实验，正电荷生成的时间依赖性可以将公式（1）取反：
@@ -31,13 +33,13 @@ $$
 在低栅压时，产生的是负电荷和表面态，将这两种退化结合得到：
 
 $$
-\Delta_{\rm eff}/t_{\rm ox}=-\frac{3}{48}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta L,+}} \right)\right]^2+3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
+\Delta L_{\rm eff}/t_{\rm ox}=-\frac{3}{48}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta L,+}} \right)\right]^2+3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
 $$
 
 在高栅压时，产生的是正电荷和表面态，将这两种退化结合得到：
 
 $$
-\Delta_{\rm eff}/t_{\rm ox}=\frac{3}{48}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta L,-}} \right)\right]^2+3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
+\Delta L_{\rm eff}/t_{\rm ox}=\frac{3}{48}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta L,-}} \right)\right]^2+3\cdot \left( \frac{t}{\tau_{\Delta L,ss}} \right)^{0.45}
 $$
 
 这三个 $L_{\rm eff}$ 的时间依赖性可以转移到跨导上，即 $\Delta g_m/g_m=-\Delta  L_{\rm eff}/L_{\rm eff}$，类似地，我们引入三个参数 $\tau_{\Delta gm,-},\tau_{\Delta gm,ss},\tau_{\Delta gm,+}$，这些是对应退化机理导致 $\vert \Delta g_m/g_m\vert=10\%$ 所需的时间。无需拟合，通过这些可以得到下面两个公式
@@ -45,13 +47,13 @@ $$
 将负电荷和界面态结合，得到：
 
 $$
-\Delta_{\rm eff}/t_{\rm ox}=-0.1\cdot \frac{5t_{\rm ox}}{8L_{\rm eff}}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta gm,-}} \right)\right]^2-0.1\cdot \left( \frac{t}{\tau_{\Delta gm,ss}} \right)^{0.45}
+\Delta g_m/g_m=-0.1\cdot \frac{5t_{\rm ox}}{8L_{\rm eff}}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta gm,-}} \right)\right]^2-0.1\cdot \left( \frac{t}{\tau_{\Delta gm,ss}} \right)^{0.45}
 $$
 
 将正电荷和界面态结合，得到：
 
 $$
-\Delta_{\rm eff}/t_{\rm ox}=0.1\cdot \frac{5t_{\rm ox}}{8L_{\rm eff}}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta gm,+}} \right)\right]^2-0.1\cdot \left( \frac{t}{\tau_{\Delta gm,ss}} \right)^{0.45}
+\Delta g_m/g_m=0.1\cdot \frac{5t_{\rm ox}}{8L_{\rm eff}}\cdot\left[\log_{10} \left( 1+10^{\sqrt{48}}\cdot \frac{t}{\tau_{\Delta gm,+}} \right)\right]^2-0.1\cdot \left( \frac{t}{\tau_{\Delta gm,ss}} \right)^{0.45}
 $$
 
 （论文后面通过外延将该公式适用于一般工作情况，以及得到器件寿命）
