@@ -67,6 +67,9 @@ collections:
   papers:
     output: true
     permalink: /papers/:path
+  datas:
+    output: true
+    permalink: /datas/:path
 
 # Defaults
 permalink: /posts/:title # posts default
@@ -76,6 +79,12 @@ defaults:
       type: "papers"
     values:
       layout: paper
+      mathjax: true
+  - scope:
+      path: ""
+      type: "datas"
+    values:
+      layout: post
       mathjax: true
 
 # Exclude from processing.

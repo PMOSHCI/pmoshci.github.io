@@ -4,7 +4,7 @@ title: JFET
 permalink: /jfet
 search_exclude: true
 mathjax: true
-nav_order: 2
+nav_order: 9
 parent: Other
 ---
 

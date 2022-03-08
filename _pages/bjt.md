@@ -4,7 +4,7 @@ title: BJT
 permalink: /bjt
 search_exclude: true
 mathjax: true
-nav_order: 1
+nav_order: 8
 parent: Other
 ---
 
