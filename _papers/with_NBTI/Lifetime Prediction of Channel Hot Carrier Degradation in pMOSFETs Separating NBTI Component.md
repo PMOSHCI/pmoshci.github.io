@@ -48,8 +48,36 @@ NBTI 和 CHC 下的顺序加应力和减应力 $ΔI_D$ 示例如图 2 所示。 
 
 ![](../images/Figure%202.%20Drain%20current%20degradation.jpg)
 
-连续的 NBTI、CHC 测量在室温下进行（~25C）。 在本文中，我们使用第 3 个连续应力开启和关闭阶段的实验结果来估计寿命。
+连续的 NBTI、CHC 测量在室温下进行（~25℃）。 在本文中，我们使用第 3 个连续应力开启和关闭阶段的实验结果来估计寿命。
 
 ### Ⅲ. 实验结果与讨论
 
-图 3 显示了 CHC 降解分离结果的漏极电流降解 ($ΔI_D^{\rm CHC}/I_D^0) 的应力时间依赖性。
+图 3 显示了 CHC 降解分离结果的漏极电流降解 ($ΔI_D^{\rm CHC}/I_D^0$) 的应力时间依赖性。这里，$I_D^0$ 对应于新器件中的漏极电流 ($I_D$)。 需要注意的是，“DC-Method”和“LF-AC Method”中分离出来的 CHC 分量都遵循幂律增加，这与 DC CHC 数据（“DC-CHC”）的趋势几乎相同。在这种情况下，指数值估计在 0.23 左右。
+
+通过从图 3 中的实验数据推断，可以估计 CHC 组件的寿命。 图 4 显示了故障时间 (TTF) 作为应力偏差 (VG=VD) 的函数。需要注意的是，使用“DC-Method”和“LF-AC-Method”分离的 CHC 组件的 TTF 比包含 NBTI 组件（“DC-CHC”）的 TTF 更长。此外，在“LF-AC-Method”的情况下，TTF 显示最大的电压加速因子。然后，可以预测在低 VDD 区域是其中最长的寿命。
+
+![](../images/Figure%203.%20Time%20evolution%20of%20drain%20current%20degradation.jpg)
+
+![](../images/Figure%204.%20Time-to-failure%20(TTF)%20under%20CHC%20stress.jpg)
+
+根据之前的报告 [14]，CHC 退化强烈依赖于衬底电流 (ISUB)，退化由下式给出
+
+$$
+\frac{\Delta I_D^{\rm CHC}}{I_D^0}\propto (\frac{I_{SUB}}{I_D})^m \tag{5}
+$$
+
+在我们之前的报告 [9] 中，已经报道了在任意时间应力后分离的 CHC 分量 ($ΔI_D^{\rm CHC}/I_D^0) 根据衬底电流 ($I_{SUB}/I_D$) 的幂律增加。
+
+图 5 显示了 CHC 测量下的故障时间 (TTF) 与衬底电流 (ISUB/ID) 的函数关系。 通过“DC-Method”和“LF-AC-Method”分离的 CHC 组件的 TTF 也根据衬底电流的幂律 (ISUB/ID) 降低。 该结果意味着简单的分离方法将启用 TCAD 仿真模型。
+
+![](../images/Figure%205.%20Time-to-failure%20(TTF)%20under%20CHC%20stress.jpg)
+
+将两种分离方法的可靠性裕度与包括 NBTI 分量的 DC-CHC 数据进行比较。 图 6 显示了作为 ISUB/ID 函数的 $ΔI_D^{\rm CHC}/I_D^0$。 两种方法各自的 $ΔI_D^{\rm CHC}/I_D^0$ 是在 DC-CHC 数据从新漏极电流 (ID0) 下降 10% 的应力时间估计的。 例如，在 $V_G=V_D=-1.3{\rm V}$ 时，估计“DC 方法”的 $ΔI_D^{\rm CHC}/I_D^0$ 为 6.5%，“LF-AC 方法”为 6.1%。
+
+![](../images/Figure%206.%20Reliability%20margins%20for%20both%20“DC-Method”.jpg)
+
+## IV. 结论
+
+在本文中，提出了简单的分离方法，用于分离 pMOSFET 中涉及 CHC 测试数据的 NBTI 和 CHC 组件。 通过关注恢复现象，成功地估计了这些组件的寿命。 恢复率是从连续 NBTI 及其恢复率估计的，然后，可以使用恢复率提取 DC-CHC 数据中的 NBTI 分量。 10% 漏极电流衰减 (ΔIDCHC/ID0=10%) 的失效时间 (TTF) 可由衬底电流的幂律 ($I_{SUB}/I_D$) 表示。 可以得出结论，这种简单的分离方法是缩短 pMOSFET 中静态 CHC 退化寿命的有力工具。
+
+在这项工作中，我们使用传统的 SiON 栅极电介质进行了研究。 该分离方法也有望适用于高 k 栅极电介质，其中不仅 NBTI，而且 nMOSFET 中的 PBTI 都可能参与 CHC 降解。 然而，除了界面缺陷之外，体陷阱还会增强 ID 退化和阈值电压偏移。 事实上，在具有高 k 栅极电介质的 MISFET 的情况下（此处未显示），有时分离的 CHC 分量 ($ΔI_D^{\rm CHC}$) 变为负值。 该结果意味着 CHC 组分可以部分恢复。因此，在分离方法中必须考虑产生的体陷阱对回收率的影响。
