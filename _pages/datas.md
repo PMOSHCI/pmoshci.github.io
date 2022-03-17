@@ -12,7 +12,7 @@ mathjax: true
     }
 </style>
 
-All the data are gather by [WebPlotDigitizer](https://apps.automeris.io/wpd/index.zh_CN.html)
+<p>All the data are gather by <a href="https://apps.automeris.io/wpd/index.zh_CN.html">WebPlotDigitizer</a></p>
 
 {%- for item in site.datas -%}
   {% assign path = item.path | split: "/" %}

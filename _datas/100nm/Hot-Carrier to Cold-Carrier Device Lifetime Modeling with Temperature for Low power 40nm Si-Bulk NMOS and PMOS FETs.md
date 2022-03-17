@@ -1,9 +1,9 @@
 ---
-title: Hot-Carrier to Cold-Carrier Device Lifetime Modeling with Temperature for Low power 40nm Si-Bulk NMOS and PMOS FETs
+title: ✨Hot-Carrier to Cold-Carrier Device Lifetime Modeling with Temperature for Low power 40nm Si-Bulk NMOS and PMOS FETs
 authors: A. Bravaix, V. Huard, D. Goguenheim, E. Vincent
 id: HCTCCDLMWTFLP4SBNAPF
 link: https://sci-hub.ru/https://ieeexplore.ieee.org/abstract/document/6131625/
-abstract: 40nm
+abstract: 40nm为主，也有 60、90、130nm。
 ---
 
 ### Fig. 1(b)

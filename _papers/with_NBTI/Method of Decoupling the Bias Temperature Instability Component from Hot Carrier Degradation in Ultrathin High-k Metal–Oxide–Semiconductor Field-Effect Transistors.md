@@ -12,7 +12,7 @@ abstract: 随着沟道长度的缩短，热载流子 (HC) 退化变得更加关�
 
 近年来，high-k 材料受到越来越多的关注，有望在许多应用中取代SiO2。然而，一些关键的可靠性问题仍然存在，例如高 k 块体材料中存在陷阱。例如，在高 k 介电 n 沟道金属氧化物半导体场效应晶体管 (NMOSFET) 中，观察到严重的正偏压温度不稳定性 (PBTI)，而不仅仅是 p 沟道 MOSFET 的负 BTI (NBTI) (PMOSFET)，这会降低 MOSFET 的阈值电压 ($V_{th}$) 和饱和漏极电流 ($I_d$)。此外，热载流子 (HC) 退化是与器件缩放相关的最关键的可靠性问题之一。当对器件施加 HC 应力时，由于垂直电场，BTI 也是不可避免的。因此，HC 降解涉及 BTI 和 HC 成分。 这种影响在高 k 器件中会更加显着。除了 NBTI，PBTI 也是高 k 栅极电介质的主要关注点之一，因为薄膜中存在大量陷阱。这可能导致对高 k 栅极电介质特性的错误解释。因此，有必要对 BTI 组件进行解耦，以了解高 k 器件中 HC 退化的机制。它还将促进技术计算机辅助设计 (TCAD) 仿真模型的改进，并使更准确的寿命预测成为可能。通过解耦，我们可以防止高估 HC 退化和过度规范可靠性。
 
-已经有一些关于将 NBTI 组件与 HC 降解脱钩的报告。 这里，NBTI 分量是指在 HC 应力下垂直电场引起的退化，其余为 HC 分量。NBTI 表示 NBT 应力下的退化。 据悉，HC分量（$\Delta V^{\rm HC}_{th}$）可以通过从HC退化（$\Delta V^{\rm Total}_{th}$）中减去NBTI [$\Delta V_{th}(NBTI)$]来解耦。NBTI是指在NBT应力下的退化。
+已经有一些关于将 NBTI 组件与 HC 降解脱钩的报告。 这里，NBTI 分量是指在 HC 应力下垂直电场引起的退化，其余为 HC 分量。NBTI 表示 NBT 应力下的退化。 据悉，HC分量（$\Delta V^{\rm HC}\_{th}$）可以通过从HC退化（$\Delta V^{\rm Total}\_{th}$）中减去NBTI [$\Delta V\_{th}(NBTI)$]来解耦。NBTI是指在NBT应力下的退化。
 
 $$
 \Delta V_{th}^{\rm HC}=\Delta V_{th}^{\rm Total}-\Delta V_{th}(NBTI) \tag{1}
@@ -26,7 +26,7 @@ $$
 
 ## 2. HC降解的解耦方法
 
-对具有 SiO2/HfSiON/多晶硅 (poly-Si) 栅叠层的 NMOSFET 和 PMOSFET 进行了测量。栅极电介质的 EOT 约为 1:5 nm。 通道长度和宽度分别为 0.11–0.5 和 5 mm。晶体管的退化通过阈值电压 ($\Deta V_{th}$) 测量来评估。 应力电压在不同的应力时间被中断，以使用 $I_d–V_g$ 扫描提取阈值电压 ($V_{th}$)。在测量期间监控栅极电流密度 ($J_g$)。
+对具有 SiO2/HfSiON/多晶硅 (poly-Si) 栅叠层的 NMOSFET 和 PMOSFET 进行了测量。栅极电介质的 EOT 约为 1:5 nm。 通道长度和宽度分别为 0.11–0.5 和 5 mm。晶体管的退化通过阈值电压 ($\Delta V_{th}$) 测量来评估。 应力电压在不同的应力时间被中断，以使用 $I_d–V_g$ 扫描提取阈值电压 ($V_{th}$)。在测量期间监控栅极电流密度 ($J_g$)。
 
 我们专注于$J_g$。 图2(a)为HC应力和NBT应力下垂直电场横向分布的TCAD模拟结果。模拟 HC 应力条件下的 $J_g$ 分布如图 2（b）所示。 实验$J_g-E$数据和电场模拟结果[图 2(a)] 被使用。
 
@@ -42,7 +42,7 @@ $$
 
 ![](../images/Fig.%203.%20(a)%20Stress%20voltage%20dependence%20of%20threshold%20voltage%20shift.jpg)
 
-我们利用 $\Delta V_{th}$ 和 $J_g$ 之间的关系提出了一种新的 HC 退化解耦方法。 该过程如图 4 所示。首先，在几个应力电压下测量 BT 应力下的 $\Delta V_{th}$ 和 $J_g$。 通过拟合得到的它们之间的关系由式（2）给出。然后，测量HC应力下的 $\Delta V_{th}$($\Delta V^{\rm Total}_{th}$)和$J_g$($J^{\rm HC}_g$)。 通过将 $J^{\rm HC}_g$ 代入已确定的 $\Delta V_{th}$ 和 $J_g$ 之间的关系 [eq. (2)]：
+我们利用 $\Delta V\_{th}$ 和 $J\_g$ 之间的关系提出了一种新的 HC 退化解耦方法。 该过程如图 4 所示。首先，在几个应力电压下测量 BT 应力下的 $\Delta V_{th}$ 和 $J_g$。 通过拟合得到的它们之间的关系由式（2）给出。然后，测量HC应力下的 $\Delta V\_{th}$($\Delta V^{\rm Total}\_{th}$)和 $J_g$($J^{\rm HC}\_g$)。 通过将 $J^{\rm HC}\_g$ 代入已确定的 $\Delta V\_{th}$ 和 $J\_g$ 之间的关系 [eq. (2)]：
 
 $$
 \Delta V_{th}^{\rm BTI}=a(J_g^{\rm HC})^b \tag{2'}

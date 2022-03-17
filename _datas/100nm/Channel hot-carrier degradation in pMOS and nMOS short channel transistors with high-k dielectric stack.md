@@ -13,6 +13,7 @@ abstract: 70nm，多种栅极材料，条件 VD=VG, 包括电压-寿命，温度
 - pMOSFET and n-MOSFET transistors with highly doped drain
 - The gate stack was either SiO2/HfSiON (20% or 80% of Hf) with TiN gate, SiO2/HfSiON (60% of Hf) with NiSi FUSI or SiO2/poly-Si
 - The dielectric consisted of a 0.7 nm chemical SiO2 interface using IMEC clean, followed by a metalorganic chemical vapor deposited (MOCVD) 3 nm thick high-k layer. The equivalent oxide thickness (EOT) ranged from 1.2 to 1.8 nm, as shown in Table below.
+  
   |pMOS|SiO2/poly-Si|60% HfSiON/FUSI|20% HfSiON/TiN|80% HfSiON/TiN|
   |-------|---|---|---|---|
   |EOT(nm)|1.8|1.4|1.2|1.8|
