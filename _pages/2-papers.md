@@ -24,17 +24,6 @@ mathjax: true
   </p>
 {%- endfor -%}
 
-## Planning
+## 中文
 
----
-
-https://sci-hub.ru/10.1109/IRPS.2013.6531943
-
-https://sci-hub.ru/10.1134/S1063782618100081
-
-https://www.iue.tuwien.ac.at/pdf/ib_2018/JB2018_Tyaginov_1.pdf
-
-https://sci-hub.ru/10.1109/IRPS.2013.6531943
-
-https://sci-hub.ru/https://ieeexplore.ieee.org/abstract/document/8060062/
-
+- [超薄栅pmos器件热载流子效应和nbti效应的研究](https://www.docin.com/p-121703354.html)

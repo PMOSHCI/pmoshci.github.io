@@ -1,0 +1,110 @@
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782593 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=203.382 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=60349.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=1.49487e+018 atoms/cm3  X.val=0.21375
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782476 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=176.055 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=66146.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=1.59394e+018 atoms/cm3  X.val=0.21375
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0779631 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=174.022 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=22099.1 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=6.90234e+017 atoms/cm3  X.val=0.21375
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782352 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=179.323 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=37519.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=7.49623e+017 atoms/cm3  X.val=0.21375
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782593 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=203.382 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=60349.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=1.49487e+018 atoms/cm3  X.val=0.21375
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782593 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=203.382 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=60349.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=1.49487e+018 atoms/cm3  X.val=0.21375
+
+pvt=-2.63757 
+
+pbeta=0.000415218 
+
+ptheta=0.0866167 
+
+gateox=10 angstroms (0.001 um)  X.val=0.005
+
+nxj=0.0782593 um from top of first Silicon layer  X.val=0.1
+
+n++ sheet rho=203.382 ohm/square  X.val=0.05
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+ldd sheet rho=60349.6 ohm/square  X.val=0.21375
+
+WARNING: x value is out of bounds of structure (min=0, max=0.225)
+defaulting to right hand side @ x=0.21375
+chan surf conc=1.49487e+018 atoms/cm3  X.val=0.21375
+
+pvt=-2.70733 
+
+pbeta=0.000396504 
+
+ptheta=0.0768864 
+

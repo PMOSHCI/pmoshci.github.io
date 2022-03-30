@@ -73,6 +73,9 @@ collections:
   old_papers:
     output: true
     permalink: /old_papers/:path
+  simulation:
+    output: true
+    permalink: /simulation/:path
 
 # Defaults
 permalink: /posts/:title # posts default
@@ -92,6 +95,12 @@ defaults:
   - scope:
       path: ""
       type: "old_papers"
+    values:
+      layout: paper
+      mathjax: true
+  - scope:
+      path: ""
+      type: "simulation"
     values:
       layout: paper
       mathjax: true
