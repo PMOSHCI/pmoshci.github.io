@@ -29,7 +29,7 @@ var has_return = document.getElementById("has_return");
 var no_return = document.getElementById("no_return");
 
 function strip() {
-    no_return.value = has_return.value.replace(/[\r\n]/g,"");
+    no_return.value = has_return.value.replace(/[\r\n]/g," ");
     if(auto_copy.checked) {
         copy();
     }
