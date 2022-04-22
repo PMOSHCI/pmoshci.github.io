@@ -38,13 +38,13 @@ $$
 对于电子，函数 $\sigma_{SP}^{e,h}(E,E_{sp})$ 定义在 $E\geq {\rm ELEC.SP.THRESH}$ 范围上，其中 $E_{sp}={\rm ELEC.SP.THRESH}$ 为
 
 $$
-\sigma_{SP}^e(E,E_{sp})={\rm ELEC.SP.SIGMA}\left( \frac{E-{\rm ELEC.SP.THRESH}}{K_b T} \right)^{{\rm ELEC.SP.POWER}}
+\sigma_{SP}^e(E,E_{sp})={\rm ELEC.SP.SIGMA}\left( \frac{E-{\rm ELEC.SP.THRESH}}{K_b T} \right)^{ {\rm ELEC.SP.POWER}}
 $$
 
 其中玻尔兹曼能量 $K_bT$ 充当能量标度。这被称为软阈值，正如 Keldysh 在碰撞电离率计算中介绍的那样。因此，只有能量大于 ${\rm ELEC.SP.THRESH}$ 的电子对这个积分有贡献。类似地，对于空穴，函数定义为
 
 $$
-\sigma_{SP}^h(E,E_{sp})={\rm HOLE.SP.SIGMA}\left( \frac{E-{\rm HOLE.SP.THRESH}}{K_b T} \right)^{{\rm HOLE.SP.POWER}}
+\sigma_{SP}^h(E,E_{sp})={\rm HOLE.SP.SIGMA}\left( \frac{E-{\rm HOLE.SP.THRESH}}{K_b T} \right)^{ {\rm HOLE.SP.POWER}}
 $$
 
 $K_f^{e,h}(SP)(r)$ 在文献中通常被称为加速度积分，尽管它的单位是 $s^{-1}$。
@@ -81,11 +81,11 @@ $$
 其中 $f(E,r)$ 是载流子分布函数的反对称部分。横截面 $\sigma_{mp}^{e,h} (E,E_{mp})$ 由以下两条表达式给出
 
 $$
-\sigma_{mp}^e = {\rm ELEC.MP.SIGMA}(\frac{E-{{\rm ELEC.MP.THRESH}}}{K_b T})^{{\rm ELEC.MP.POWER}}
+\sigma_{mp}^e = {\rm ELEC.MP.SIGMA}(\frac{E-{ {\rm ELEC.MP.THRESH}}}{K_b T})^{ {\rm ELEC.MP.POWER}}
 $$
 
 $$
-\sigma_{mp}^h = {\rm HOLE.MP.SIGMA}(\frac{E-{{\rm HOLE.MP.THRESH}}}{K_b T})^{{\rm HOLE.MP.POWER}}
+\sigma_{mp}^h = {\rm HOLE.MP.SIGMA}(\frac{E-{ {\rm HOLE.MP.THRESH}}}{K_b T})^{ {\rm HOLE.MP.POWER}}
 $$
 
 因为这些过程依赖于冷载流子，所以阈值能量小于 SP 过程中的阈值能量。 经过一些数学运算和简化后，MP 过程产生的陷阱密度由下式给出
@@ -151,13 +151,13 @@ $$
 对于电子，函数 $\sigma_{SP}^{e,h}(E,E_{sp})$ 定义为 $E\geq {\rm ELEC.SP.THRESH}$，其中 $E_{sp}={\rm ELEC.SP.THRESH}$ 为
 
 $$
-\tau_{SP}^e(E,E_{sp})={\rm ELEC.SP.SIGMA}\left( \frac{E-{\rm ELEC.SP.THRESH}}{K_b T} \right)^{{\rm ELEC.SP.POWER}}
+\tau_{SP}^e(E,E_{sp})={\rm ELEC.SP.SIGMA}\left( \frac{E-{\rm ELEC.SP.THRESH}}{K_b T} \right)^{ {\rm ELEC.SP.POWER}}
 $$
 
 其中玻尔兹曼能量 $K_bT$ 充当能量标度。这被称为软阈值，正如 Keldysh 在碰撞电离率计算中介绍的那样。因此，只有能量大于 ${\rm ELEC.SP.THRESH}$ 的电子对这个积分有贡献。类似地，对于空穴，函数定义为
 
 $$
-\tau_{SP}^h(E,E_{sp})={\rm HOLE.SP.SIGMA}\left( \frac{E-{\rm HOLE.SP.THRESH}}{K_b T} \right)^{{\rm HOLE.SP.POWER}}
+\tau_{SP}^h(E,E_{sp})={\rm HOLE.SP.SIGMA}\left( \frac{E-{\rm HOLE.SP.THRESH}}{K_b T} \right)^{ {\rm HOLE.SP.POWER}}
 $$
 
 方程 4-10 通常被称为加速度积分，尽管它的单位是 $s^{-1}$。参数的默认值如表 4-5 所示。
